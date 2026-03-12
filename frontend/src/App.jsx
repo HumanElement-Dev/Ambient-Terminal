@@ -82,11 +82,11 @@ function BottomBar() {
     >
       <span style={{ color: '#00ff88' }}>Ambient Terminal OS</span>
       <span className="mx-3" style={{ color: 'rgba(255,255,255,0.18)' }}>·</span>
-      <span style={{ color: 'rgba(255,255,255,0.3)' }}>Human Element Labs</span>
+      <span style={{ color: 'rgba(255,255,255,0.3)' }}>HumanElement Labs</span>
       <span className="mx-3" style={{ color: 'rgba(255,255,255,0.18)' }}>·</span>
-      <span style={{ color: 'rgba(255,255,255,0.18)' }}>v1.0.0</span>
+      <span style={{ color: 'rgba(255,255,255,0.18)' }}>v3.1.0</span>
       <div className="flex-1" />
-      <span style={{ color: 'rgba(255,255,255,0.15)' }}>node  ·  ws  ·  react  ·  xterm</span>
+      <span style={{ color: 'rgba(255,255,255,0.15)' }}>node  ·  ws  ·  react  ·  custom renderer</span>
     </div>
   );
 }

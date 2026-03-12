@@ -13,53 +13,12 @@ body {
   font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace;
 }
 
-/* ── xterm overrides ──────────────────────────────────── */
-.xterm {
-  height: 100%;
-  padding: 0;
+/* ── Custom terminal scrollback ──────────────────────────── */
+/* Hide scrollbar but keep scroll behaviour */
+.terminal-scroll {
+  scrollbar-width: none;           /* Firefox */
+  -ms-overflow-style: none;        /* IE / Edge */
 }
-
-.xterm-screen {
-  background: transparent !important;
+.terminal-scroll::-webkit-scrollbar {
+  display: none;                   /* Chrome / Safari */
 }
-
-.xterm .xterm-viewport {
-  background: transparent !important;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
-}
-
-.xterm .xterm-viewport::-webkit-scrollbar {
-  width: 4px;
-}
-
-.xterm .xterm-viewport::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 2px;
-}
-
-.xterm .xterm-viewport::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.22);
-}
-
-.xterm-rows {
-  font-feature-settings: 'liga' 1, 'calt' 1;
-}
-
-/* ── Ambient glow orbs ────────────────────────────────── */
-@keyframes float-a {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%       { transform: translate(40px, -30px) scale(1.1); }
-}
-@keyframes float-b {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%       { transform: translate(-30px, 40px) scale(0.95); }
-}
-@keyframes float-c {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%       { transform: translate(20px, 20px) scale(1.05); }
-}
-
-.orb-a { animation: float-a 12s ease-in-out infinite; }
-.orb-b { animation: float-b 15s ease-in-out infinite; }
-.orb-c { animation: float-c 10s ease-in-out infinite; }
